@@ -3,6 +3,7 @@ body {
     font-weight: 400;
     font-style: normal;
     padding: 50px;
+    padding-top: 10px;
 }
 
 .rantalcard {
@@ -16,7 +17,6 @@ body {
 }
 
 .inpic {
-    background-color: blanchedalmond;
     height: 50%;
 }
 
