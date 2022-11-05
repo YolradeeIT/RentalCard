@@ -55,7 +55,7 @@ function takeshot() {
     let div = document.getElementById("photo");
     const renderpage = window.open('Rendered.html')
 
-    html2canvas(div, {allowTaint: true,useCORS: true}).then(function (canvas) {
+    html2canvas(div, {allowTaint: true,useCORS: true,width: 750, height: 1000}).then(function (canvas) {
         let img = canvas.toDataURL();
         renderpage.document.getElementById('candownload').src = img;
         

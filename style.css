@@ -7,8 +7,8 @@ body {
 }
 
 .rantalcard {
-    height: 1200px;
-    width: 900px;
+    height: 1000px;
+    width: 750px;
     background-color: black;
     color: white;
     position: relative;
@@ -41,7 +41,7 @@ img {
 .description {
     text-align:center;
     color:black;
-    font-size: 45px;
+    font-size: 35px;
     margin-top: 25px;
     font-weight: 600;
 }
