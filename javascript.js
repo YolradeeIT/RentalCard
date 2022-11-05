@@ -1,7 +1,7 @@
 function addimg(inid, sid){
     let inp = document.getElementById(inid).files;
     let chgel = document.getElementById(sid);
-    chgel.src = URL.createObjectURL(inp[0]);
+    chgel.style.backgroundImage = "url(" + URL.createObjectURL(inp[0]) + ")";
     console.log("hehe");
 }
 
@@ -49,4 +49,22 @@ function chgdes(where) {
     "Size " + size + "<br>" +
     shape;
     document.getElementById('des').innerHTML = text;
+}
+
+function takeshot() {
+    let div = document.getElementById("photo");
+    const renderpage = window.open('Rendered.html')
+
+    html2canvas(div, {allowTaint: true,useCORS: true}).then(function (canvas) {
+        let img = canvas.toDataURL();
+        renderpage.document.getElementById('candownload').src = img;
+        
+        // location.href = 'Rendered.html';
+        // var link = document.createElement('a');
+        // link.href = img;
+        // link.download = 'cardeiei.png';
+        // document.body.appendChild(link);
+        // link.click();
+        // document.body.removeChild(link);
+    });
 }
