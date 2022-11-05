@@ -45,7 +45,7 @@ function chgdes(where) {
     "<br>เช่าไพร " + prip + "<br>" + 
     addition + "มัดจำ " + deposit +
     "<br>ค่าส่งหักจากมัดจำ" + 
-    "<br>----------------" +
+    "<br>----------------<br>" +
     "Size " + size + "<br>" +
     shape;
     document.getElementById('des').innerHTML = text;
