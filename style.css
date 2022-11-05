@@ -41,7 +41,7 @@ img {
 .description {
     text-align:center;
     color:black;
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 25px;
-    font-weight: 600;
+    /* font-weight: 500; */
 }
