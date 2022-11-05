@@ -44,4 +44,7 @@ img {
     font-size: 35px;
     margin-top: 25px;
     font-weight: 600;
+    @supports (-webkit-touch-callout: none) {
+        letter-spacing: normal;
+      }
 }
